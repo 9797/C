@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+
+ void main()
+{
+	float a,b,c,m,x,x1,x2;
+	printf("请输入a的值（a 的值不能为0）：");
+	scanf("%f",&a);
+    printf("请输入b的值：");
+	scanf("%f",&b);
+	printf("请输入c的值：");
+	scanf("%f",&c);	
+	m = b*b - 4*a*c;
+	if(m<0)
+		printf("该方程没有实根\n");
+	 else if(m=0)
+	 {
+		x = x1 = x2 = -b/(2*a);
+	    printf("该方程有两个相等的实根：x1 = x2= %f\n",x);
+	 }
+	 else
+	 {
+	    x1 = (-b + sqrt(m))/(2*a);
+     	x2 = (-b - sqrt(m))/(2*a);
+        printf("该方程的两个实根为：x1 = %f,x2= %f\n",x1,x2);
+	 }
+}
