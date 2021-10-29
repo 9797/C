@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+ main()
+{
+	char ch;
+	printf_s("请输入一个小写英文字母：");
+	ch = getchar();
+	ch = ch - 32;
+	printf_s("%c,%d\n", ch, ch);
+}
